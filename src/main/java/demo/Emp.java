@@ -7,27 +7,40 @@ import javax.persistence.Id;
 public class Emp {
 	@Id
 	int id;
-	String name;
+	EmpName name;
 	String cmpname;
+	
 	
 	public int getId() {
 		return id;
 	}
+
+
 	public void setId(int id) {
 		this.id = id;
 	}
-	public String getName() {
+
+
+	public EmpName getName() {
 		return name;
 	}
-	public void setName(String name) {
+
+
+	public void setName(EmpName name) {
 		this.name = name;
 	}
+
+
 	public String getCmpname() {
 		return cmpname;
 	}
+
+
 	public void setCmpname(String cmpname) {
 		this.cmpname = cmpname;
 	}
+
+
 	@Override
 	public String toString() {
 		return "Emp [id=" + id + ", name=" + name + ", cmpname=" + cmpname + "]";

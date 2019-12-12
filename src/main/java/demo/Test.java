@@ -11,8 +11,13 @@ public class Test {
 		
 		
 	Emp e=new Emp();
-	e.setId(2);
-	e.setName("Siya");
+	EmpName n=new EmpName();
+	
+	e.setId(1);
+	n.setFname("nutan");
+	n.setMname("ragho");
+	n.setLname("patil");
+	e.setName(n);
 	e.setCmpname("axelor");
 		
 	Configuration cn=new Configuration().configure().addAnnotatedClass(Emp.class);
